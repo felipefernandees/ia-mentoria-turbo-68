@@ -159,12 +159,12 @@
     /* Transições suaves */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
-    /* Rainbow button colors - roxo #4F46E5 */
-    --color-1: 244 74% 59%;  /* #4F46E5 */
-    --color-2: 244 74% 65%;  /* Variação mais clara */
-    --color-3: 244 74% 70%;  /* Variação ainda mais clara */
-    --color-4: 244 74% 55%;  /* Variação mais escura */
-    --color-5: 244 74% 50%;  /* Mais escuro ainda */
+    /* Rainbow button colors - branco */
+    --color-1: 0 0% 100%;  /* #FFFFFF */
+    --color-2: 0 0% 95%;   /* Variação mais escura */
+    --color-3: 0 0% 90%;   /* Variação ainda mais escura */
+    --color-4: 0 0% 85%;   /* Variação mais escura */
+    --color-5: 0 0% 80%;   /* Mais escuro ainda */
   }
 }
 
