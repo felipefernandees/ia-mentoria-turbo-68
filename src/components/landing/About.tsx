@@ -22,7 +22,7 @@ const About = ({
         <ProfileCard
           name="Felipe"
           title="Especialista em IA e Automações"
-          description="Vivo do mercado de IA e automações há 1 ano. Antes, eu era estagiário de infraestrutura de TI ganhando R$1.000/mês. Em 12 meses, faturei mais de R$170.000 com IA. Agora, ensino o caminho para você construir seu negócio com automações que trabalham por você 24h/dia."
+          description="Vivo do mercado de IA e automações há 1 ano. Antes, eu era estagiário de infraestrutura de TI ganhando R$1.000/mês. Em 12 meses, faturei mais de R$170.000 com IA. Agora, ensino o caminho para você construir seu negócio surfando a maior onda do digital."
           imageUrl={photoUrl}
           youtubeUrl="https://www.youtube.com/@FelipeFernandesT"
         />
