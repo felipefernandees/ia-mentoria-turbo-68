@@ -118,16 +118,16 @@
     --popover: 0 0% 8%;            /* Cinza escuro */
     --popover-foreground: 0 0% 100%;
 
-    /* CTA principal - roxo moderno */
-    --primary: 244 74% 59%;        /* #4F46E5 - Roxo moderno */
+    /* CTA principal - verde água moderno */
+    --primary: 164 100% 45%;       /* #00E3A5 - Verde água moderno */
     --primary-foreground: 0 0% 100%;
 
     /* Elementos secundários - cinza neutro */
     --secondary: 240 5% 65%;       /* #A1A1AA - Cinza neutro */
     --secondary-foreground: 0 0% 4%;
 
-    /* CTA especial - roxo vibrante */
-    --cta-button: 244 74% 59%;     /* #4F46E5 - Roxo para CTAs */
+    /* CTA especial - verde água vibrante */
+    --cta-button: 164 100% 45%;    /* #00E3A5 - Verde água para CTAs */
     --cta-button-foreground: 0 0% 100%;
 
     --accent: 240 5% 65%;         /* Cinza neutro para highlights */
@@ -141,14 +141,14 @@
 
     --border: 240 5% 26%;          /* Bordas cinza claro */
     --input: 0 0% 8%;              /* Inputs escuros */
-    --ring: 244 74% 59%;           /* #4F46E5 - Focus ring = primary */
+    --ring: 164 100% 45%;          /* #00E3A5 - Focus ring = primary */
 
     --radius: 0.75rem;
     
     /* Gradientes personalizados */
     --gradient-hero: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(0 0% 6%) 100%);
-    --gradient-cta: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(244 74% 65%) 100%);
-    --gradient-cta-button: linear-gradient(135deg, hsl(var(--cta-button)) 0%, hsl(244 74% 65%) 100%);
+    --gradient-cta: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(164 100% 50%) 100%);
+    --gradient-cta-button: linear-gradient(135deg, hsl(var(--cta-button)) 0%, hsl(164 100% 50%) 100%);
     --gradient-accent: linear-gradient(135deg, hsl(164 100% 45%) 0%, hsl(164 100% 55%) 100%);
     
     /* Sombras elegantes */
