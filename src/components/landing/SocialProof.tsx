@@ -21,15 +21,15 @@ const SocialProof = ({
   const cases = [
     { 
       image: "https://baserow-backend-production20240528124524339000000001.s3.amazonaws.com/user_files/WlGrPrsEYz9lZMQwD583r4r0SgMOZcs0_32b682f996cc63c1557dd6cc16a280c93b69a389a71b50a1051a7d3965caea3e.jpeg", 
-      legend: "+3 clientes em 30 dias" 
+      legend: "Projeto vendido por R$9.000 + R$3.600/mês" 
     },
     { 
       image: "https://baserow-backend-production20240528124524339000000001.s3.amazonaws.com/user_files/GGLrQG9JWpXFVtb6UkzCTLrL0R4rmWew_62199a4acbd6797dcff9a8057eb78afcca177c8debb308367edb8b634d09396e.jpeg", 
-      legend: "Resposta automatizada em 10 min" 
+      legend: "Primeiro projeto vendido por R$6.000" 
     },
     { 
       image: "https://baserow-backend-production20240528124524339000000001.s3.amazonaws.com/user_files/uQzFVd24RWVj2OIVwtx8v6BckaieCXy7_5f2f9158af9aaa9ef9d6ed1dca415dfdeffe8a00a99ca3cb417b966bbf33f013.jpeg", 
-      legend: "Primeiro projeto em 15 dias" 
+      legend: "Feedback diretamente da comunidade" 
     },
   ];
 
