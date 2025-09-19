@@ -1,9 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Shield, CheckCircle } from "lucide-react";
-
 const Guarantee = () => {
-  return (
-    <section className="py-20 px-4">
+  return <section className="py-20 px-4">
       <div className="max-w-5xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
@@ -54,7 +52,7 @@ const Guarantee = () => {
               <div className="text-center md:text-left">
                 <p className="text-xl md:text-2xl font-medium mb-6 leading-relaxed">
                   Se você aplicar tudo o que eu te mostrar e não tiver resultados,{" "}
-                  <span className="text-primary font-bold">
+                  <span className="font-bold text-[#00e3a5]">
                     eu te coloco para trabalhar comigo.
                   </span>
                 </p>
@@ -69,8 +67,6 @@ const Guarantee = () => {
           </CardContent>
         </Card>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Guarantee;
