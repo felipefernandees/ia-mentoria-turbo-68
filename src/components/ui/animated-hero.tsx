@@ -74,9 +74,9 @@ function AnimatedHero({
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-3">
-            <RainbowButton className="text-lg px-8 py-6" onClick={handleFormClick}>
+            <RainbowButton onClick={handleFormClick} className="text-lg px-8 py-6 bg-slate-50 text-zinc-950">
               <span className="flex items-center gap-2">
-                Quero participar da mentoria <MoveRight className="w-4 h-4" />
+                Quero participar da mentoria 
               </span>
             </RainbowButton>
             <Button size="lg" className="gap-4" variant="outline" onClick={() => window.open(whatsappUrl, '_blank')}>
