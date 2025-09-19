@@ -52,16 +52,12 @@ const Guarantee = () => {
               <div className="text-center md:text-left">
                 <p className="text-xl md:text-2xl font-medium mb-6 leading-relaxed">
                   Se você aplicar tudo o que eu te mostrar e não tiver resultados,{" "}
-                  <span className="font-bold text-[#00e3a5]">
+                  <span className="font-bold text-indigo-600">
                     eu te coloco para trabalhar comigo.
                   </span>
                 </p>
                 
-                <div className="bg-muted/50 p-4 rounded-xl border border-border/50">
-                  <p className="text-xs text-muted-foreground italic">
-                    *Sujeito a comprovação de execução das atividades combinadas e análise dos resultados obtidos durante o período de mentoria.
-                  </p>
-                </div>
+                
               </div>
             </div>
           </CardContent>
