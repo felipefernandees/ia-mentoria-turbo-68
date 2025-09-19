@@ -1,0 +1,313 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Design system para landing page de mentoria IA - cores em HSL */
+
+@layer base {
+  @property --pos-x {
+    syntax: '<percentage>';
+    initial-value: 11.14%;
+    inherits: false;
+  }
+
+  @property --pos-y {
+    syntax: '<percentage>';
+    initial-value: 140%;
+    inherits: false;
+  }
+
+  @property --spread-x {
+    syntax: '<percentage>';
+    initial-value: 150%;
+    inherits: false;
+  }
+
+  @property --spread-y {
+    syntax: '<percentage>';
+    initial-value: 180.06%;
+    inherits: false;
+  }
+
+  @property --color-1 {
+    syntax: '<color>';
+    initial-value: hsl(0 100% 63%);
+    inherits: false;
+  }
+
+  @property --color-2 {
+    syntax: '<color>';
+    initial-value: hsl(270 100% 63%);
+    inherits: false;
+  }
+
+  @property --color-3 {
+    syntax: '<color>';
+    initial-value: hsl(210 100% 63%);
+    inherits: false;
+  }
+
+  @property --color-4 {
+    syntax: '<color>';
+    initial-value: hsl(195 100% 63%);
+    inherits: false;
+  }
+
+  @property --color-5 {
+    syntax: '<color>';
+    initial-value: hsl(90 100% 63%);
+    inherits: false;
+  }
+
+  @property --border-angle {
+    syntax: '<angle>';
+    initial-value: 20deg;
+    inherits: true;
+  }
+
+  @property --border-color-1 {
+    syntax: '<color>';
+    initial-value: hsla(340, 75%, 60%, 0.2);
+    inherits: true;
+  }
+
+  @property --border-color-2 {
+    syntax: '<color>';
+    initial-value: hsla(340, 75%, 40%, 0.75);
+    inherits: true;
+  }
+
+  @property --stop-1 {
+    syntax: '<percentage>';
+    initial-value: 37.35%;
+    inherits: false;
+  }
+
+  @property --stop-2 {
+    syntax: '<percentage>';
+    initial-value: 61.36%;
+    inherits: false;
+  }
+
+  @property --stop-3 {
+    syntax: '<percentage>';
+    initial-value: 78.42%;
+    inherits: false;
+  }
+
+  @property --stop-4 {
+    syntax: '<percentage>';
+    initial-value: 89.52%;
+    inherits: false;
+  }
+
+  @property --stop-5 {
+    syntax: '<percentage>';
+    initial-value: 100%;
+    inherits: false;
+  }
+
+  :root {
+    /* Nova paleta minimalista - preto profundo */
+    --background: 0 0% 4%;         /* #0A0A0A - Preto profundo minimalista */
+    --foreground: 0 0% 100%;       /* #FFFFFF - Texto principal branco */
+
+    --card: 0 0% 8%;               /* Cinza escuro para cartões */
+    --card-foreground: 0 0% 100%;  /* #FFFFFF */
+
+    --popover: 0 0% 8%;            /* Cinza escuro */
+    --popover-foreground: 0 0% 100%;
+
+    /* CTA principal - roxo moderno */
+    --primary: 244 71% 60%;        /* #4F46E5 - Roxo moderno */
+    --primary-foreground: 0 0% 100%;
+
+    /* Elementos secundários - cinza neutro */
+    --secondary: 240 5% 65%;       /* #A1A1AA - Cinza neutro */
+    --secondary-foreground: 0 0% 4%;
+
+    /* CTA especial - roxo vibrante */
+    --cta-button: 244 71% 60%;     /* #4F46E5 - Roxo para CTAs */
+    --cta-button-foreground: 0 0% 100%;
+
+    --accent: 240 5% 65%;         /* Cinza neutro para highlights */
+    --accent-foreground: 0 0% 4%;
+
+    --muted: 0 0% 8%;              /* Elementos secundários escuros */
+    --muted-foreground: 240 5% 65%; /* #A1A1AA - Texto secundário */
+
+    --destructive: 348 84% 61%;    /* #EA4B71 - Rosa avermelhado vibrante */
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 240 5% 26%;          /* Bordas cinza claro */
+    --input: 0 0% 8%;              /* Inputs escuros */
+    --ring: 244 71% 60%;           /* #4F46E5 - Focus ring = primary */
+
+    --radius: 0.75rem;
+    
+    /* Gradientes personalizados */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(0 0% 6%) 100%);
+    --gradient-cta: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(244 71% 65%) 100%);
+    --gradient-cta-button: linear-gradient(135deg, hsl(var(--cta-button)) 0%, hsl(244 71% 65%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(244 71% 65%) 100%);
+    
+    /* Sombras elegantes */
+    --shadow-card: 0 4px 24px -4px hsl(0 0% 0% / 0.6);
+    --shadow-cta: 0 8px 32px -8px hsl(var(--primary) / 0.4);
+    --shadow-glow: 0 0 40px hsl(240 5% 65% / 0.2);
+    
+    /* Transições suaves */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Rainbow button colors */
+    --color-1: 0 100% 63%;
+    --color-2: 270 100% 63%;
+    --color-3: 210 100% 63%;
+    --color-4: 195 100% 63%;
+    --color-5: 90 100% 63%;
+  }
+}
+
+/* Classes utilitárias customizadas */
+@layer components {
+  .gradient-button {
+    @apply relative appearance-none cursor-pointer;
+    background: radial-gradient(
+      var(--spread-x) var(--spread-y) at var(--pos-x) var(--pos-y),
+      var(--color-1) var(--stop-1),
+      var(--color-2) var(--stop-2),
+      var(--color-3) var(--stop-3),
+      var(--color-4) var(--stop-4),
+      var(--color-5) var(--stop-5)
+    );
+    transition:
+      --pos-x 0.5s,
+      --pos-y 0.5s,
+      --spread-x 0.5s,
+      --spread-y 0.5s,
+      --color-1 0.5s,
+      --color-2 0.5s,
+      --color-3 0.5s,
+      --color-4 0.5s,
+      --color-5 0.5s,
+      --border-angle 0.5s,
+      --border-color-1 0.5s,
+      --border-color-2 0.5s,
+      --stop-1 0.5s,
+      --stop-2 0.5s,
+      --stop-3 0.5s,
+      --stop-4 0.5s,
+      --stop-5 0.5s;
+  }
+
+  .gradient-button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(
+      var(--border-angle),
+      var(--border-color-1),
+      var(--border-color-2)
+    );
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+
+  .gradient-button:hover {
+    --pos-x: 0%;
+    --pos-y: 91.51%;
+    --spread-x: 120.24%;
+    --spread-y: 103.18%;
+    --color-1: #c96287;
+    --color-2: #c66c64;
+    --color-3: #cc7d23;
+    --color-4: #37140a;
+    --color-5: #000;
+    --border-angle: 190deg;
+    --border-color-1: hsla(340, 78%, 90%, 0.1);
+    --border-color-2: hsla(340, 75%, 90%, 0.6);
+    --stop-1: 0%;
+    --stop-2: 8.8%;
+    --stop-3: 21.44%;
+    --stop-4: 71.34%;
+    --stop-5: 85.76%;
+  }
+
+  .gradient-button-variant {
+    --color-1: #000022;
+    --color-2: #1f3f6d;
+    --color-3: #469396;
+    --color-4: #f1ffa5;
+    --border-angle: 200deg;
+    --border-color-1: hsla(320, 75%, 90%, 0.6);
+    --border-color-2: hsla(320, 50%, 90%, 0.15);
+  }
+
+  .gradient-button-variant:hover {
+    --pos-x: 0%;
+    --pos-y: 95.51%;
+    --spread-x: 110.24%;
+    --spread-y: 110.2%;
+    --color-1: #000020;
+    --color-2: #f1ffa5;
+    --color-3: #469396;
+    --color-4: #1f3f6d;
+    --color-5: #000;
+    --stop-1: 0%;
+    --stop-2: 10%;
+    --stop-3: 35.44%;
+    --stop-4: 71.34%;
+    --stop-5: 90.76%;
+    --border-angle: 210deg;
+    --border-color-1: hsla(320, 75%, 90%, 0.2);
+    --border-color-2: hsla(320, 50%, 90%, 0.75);
+  }
+
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+  
+  .gradient-cta {
+    background: var(--gradient-cta);
+  }
+  
+  .gradient-accent {
+    background: var(--gradient-accent);
+  }
+  
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+  
+  .shadow-cta {
+    box-shadow: var(--shadow-cta);
+  }
+  
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+  
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+  
+  .text-gradient {
+    background: var(--gradient-accent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
