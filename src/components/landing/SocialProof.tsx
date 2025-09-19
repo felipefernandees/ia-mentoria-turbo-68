@@ -67,10 +67,10 @@ const SocialProof = ({
               style={{ transform: `translateX(-${currentIndex * 100}%)` }}
             >
               {cases.map((case_, index) => (
-                <div key={index} className="w-full flex-shrink-0">
-                  <Card className="mx-4 shadow-card border-border/50">
+                <div key={index} className="w-full flex-shrink-0 flex justify-center">
+                  <Card className="mx-4 shadow-card border-border/50 w-full max-w-sm md:max-w-md lg:max-w-lg">
                     <CardContent className="p-0">
-                      <div className="aspect-[4/5] bg-card rounded-lg overflow-hidden">
+                      <div className="aspect-[4/5] md:aspect-[3/4] lg:aspect-[2/3] bg-card rounded-lg overflow-hidden">
                         <img 
                           src={case_.image}
                           alt={case_.legend}
@@ -81,8 +81,8 @@ const SocialProof = ({
                           }}
                         />
                       </div>
-                      <div className="p-6">
-                        <p className="text-lg font-semibold text-center">
+                      <div className="p-4 md:p-6">
+                        <p className="text-base md:text-lg font-semibold text-center">
                           {case_.legend}
                         </p>
                       </div>
