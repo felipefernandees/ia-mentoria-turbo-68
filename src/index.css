@@ -31,31 +31,31 @@
 
   @property --color-1 {
     syntax: '<color>';
-    initial-value: hsl(0 100% 63%);
+    initial-value: hsl(244 74% 59%);
     inherits: false;
   }
 
   @property --color-2 {
     syntax: '<color>';
-    initial-value: hsl(270 100% 63%);
+    initial-value: hsl(244 74% 65%);
     inherits: false;
   }
 
   @property --color-3 {
     syntax: '<color>';
-    initial-value: hsl(210 100% 63%);
+    initial-value: hsl(244 74% 70%);
     inherits: false;
   }
 
   @property --color-4 {
     syntax: '<color>';
-    initial-value: hsl(195 100% 63%);
+    initial-value: hsl(244 74% 55%);
     inherits: false;
   }
 
   @property --color-5 {
     syntax: '<color>';
-    initial-value: hsl(90 100% 63%);
+    initial-value: hsl(244 74% 50%);
     inherits: false;
   }
 
@@ -119,7 +119,7 @@
     --popover-foreground: 0 0% 100%;
 
     /* CTA principal - roxo moderno */
-    --primary: 244 71% 60%;        /* #4F46E5 - Roxo moderno */
+    --primary: 244 74% 59%;        /* #4F46E5 - Roxo moderno */
     --primary-foreground: 0 0% 100%;
 
     /* Elementos secundários - cinza neutro */
@@ -127,7 +127,7 @@
     --secondary-foreground: 0 0% 4%;
 
     /* CTA especial - roxo vibrante */
-    --cta-button: 244 71% 60%;     /* #4F46E5 - Roxo para CTAs */
+    --cta-button: 244 74% 59%;     /* #4F46E5 - Roxo para CTAs */
     --cta-button-foreground: 0 0% 100%;
 
     --accent: 240 5% 65%;         /* Cinza neutro para highlights */
@@ -141,15 +141,15 @@
 
     --border: 240 5% 26%;          /* Bordas cinza claro */
     --input: 0 0% 8%;              /* Inputs escuros */
-    --ring: 244 71% 60%;           /* #4F46E5 - Focus ring = primary */
+    --ring: 244 74% 59%;           /* #4F46E5 - Focus ring = primary */
 
     --radius: 0.75rem;
     
     /* Gradientes personalizados */
     --gradient-hero: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(0 0% 6%) 100%);
-    --gradient-cta: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(244 71% 65%) 100%);
-    --gradient-cta-button: linear-gradient(135deg, hsl(var(--cta-button)) 0%, hsl(244 71% 65%) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(180 85% 60%) 0%, hsl(180 85% 75%) 100%);
+    --gradient-cta: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(244 74% 65%) 100%);
+    --gradient-cta-button: linear-gradient(135deg, hsl(var(--cta-button)) 0%, hsl(244 74% 65%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(164 100% 45%) 0%, hsl(164 100% 55%) 100%);
     
     /* Sombras elegantes */
     --shadow-card: 0 4px 24px -4px hsl(0 0% 0% / 0.6);
@@ -159,12 +159,12 @@
     /* Transições suaves */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
-    /* Rainbow button colors */
-    --color-1: 0 100% 63%;
-    --color-2: 270 100% 63%;
-    --color-3: 210 100% 63%;
-    --color-4: 195 100% 63%;
-    --color-5: 90 100% 63%;
+    /* Rainbow button colors - roxo #4F46E5 */
+    --color-1: 244 74% 59%;  /* #4F46E5 */
+    --color-2: 244 74% 65%;  /* Variação mais clara */
+    --color-3: 244 74% 70%;  /* Variação ainda mais clara */
+    --color-4: 244 74% 55%;  /* Variação mais escura */
+    --color-5: 244 74% 50%;  /* Mais escuro ainda */
   }
 }
 

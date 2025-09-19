@@ -49,7 +49,7 @@ export const ShinyButton: React.FC<ShinyButtonProps> = ({
         className
       )}
       style={{
-        background: "linear-gradient(135deg, #00E3A5 0%, #00C896 100%)"
+        background: "linear-gradient(135deg, #4F46E5 0%, #6366F1 100%)"
       }}
     >
       <span
