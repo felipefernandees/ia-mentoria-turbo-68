@@ -14,7 +14,7 @@ const FinalCTA = ({
   return <section className="py-20 px-4 gradient-hero relative overflow-hidden">
       {/* Background effects */}
       <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gray-800/5 rounded-full blur-3xl" />
       
       <div className="relative z-10 max-w-4xl mx-auto text-center">
         <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
